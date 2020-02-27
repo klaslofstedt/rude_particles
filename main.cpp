@@ -2,14 +2,8 @@
 #include "ofApp.h"
 
 //========================================================================
-int main() 
+int main()
 {
-	ofGLWindowSettings settings;
-	settings.setGLVersion(3, 2);
-	//settings.setSize(720, 720);
-	settings.setSize(1920, 1080);
-	settings.windowMode = OF_FULLSCREEN;
-
-	ofCreateWindow(settings);
-	ofRunApp(new ofApp());
+	ofSetupOpenGL(1920, 1080, OF_FULLSCREEN);
+	ofRunApp( new ofApp());
 }
